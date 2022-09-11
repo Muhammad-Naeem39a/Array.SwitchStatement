@@ -16,8 +16,19 @@ public class MethodsInJava {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter No to find its recursion");
+        int a = input.nextInt();
+        int result = sum(a);
+        System.out.println(result);
         System.out.println("Enter your age to know your access");
         int age = input.nextInt();
         checkAge(age);
+    }
+    public static int sum(int k) {
+        if (k > 0) {
+            return k + sum(k - 1);
+        } else {
+            return 0;
+        }
     }
 }
