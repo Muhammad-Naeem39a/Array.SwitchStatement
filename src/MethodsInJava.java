@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MethodsInJava {
-    static void checkAge(int age) {
+   public  static void checkAge(int age) {
 
         // If age is less than 18, print "access denied"
         if (age < 18) {
